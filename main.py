@@ -1,17 +1,33 @@
 from pyrogram import Client,  filters
 from pyrogram import Client
-from pyrogram import idle
 import loging
+import aiorun
 import os
 
+class App(Client):
+  def __init__(self):
+     super()__init__(
+       name="debug",
+       api_id=API_ID,
+       api_hash=API_HASH,
+       bot_token=BOT_TOKEN,
+       worker='50",
+     )
 
-app = Client(
-  name"debug",
-  api_id=API_HASH,
-  api_hash=API)_HASH,
-  bot_token=BOT_TOKEN,
-)
+async def star(self):
+    await super().start()
+    me = await self.get.me()
+    self.username = "@" + me.username
+    print(f"{me.fist_name} start {me.username}
 
-async def star():
-    await app.start()
-    await idle()
+
+
+async def stop(self):
+    await super().stop()
+    print("bot stop bye")
+
+
+if __name__ == "__main__":
+aiorun.run((main))
+
+    
