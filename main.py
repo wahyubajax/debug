@@ -1,5 +1,6 @@
 from pyrogram import Client,  filters
 from pyrogram import Client
+from pyrogram import idle
 import loging
 import os
 
@@ -10,3 +11,7 @@ app = Client(
   api_hash=API)_HASH,
   bot_token=BOT_TOKEN,
 )
+
+async def star():
+    await app.start()
+    await idle()
