@@ -12,7 +12,7 @@ class App(Client):
        api_hash=API_HASH,
        bot_token=BOT_TOKEN,
        plugins=dict(root="debug.plugins")
-       worker='50",
+       worker='50',
 )
 
 async def star(self):
