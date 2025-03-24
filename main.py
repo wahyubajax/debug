@@ -10,7 +10,7 @@ app = Client(
     api_hash=API_HASH,
     bot_token=BOT_TOKEN,
     plugins=dict(root="debug.plugins"),
-    worker='50',
+    worker=32,
 )
 
 async def start_client():
