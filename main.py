@@ -14,7 +14,7 @@ class App(Client):
        worker='50',
 )
 
-async def star(self):
+async def start(self):
     await super().start()
     me = await self.get.me()
     self.username = "@" + me.username
