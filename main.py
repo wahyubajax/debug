@@ -30,6 +30,6 @@ async def stop(self):
 
 if __name__ == "__main__":
    aiorun.run(start(),
-   shutdown_callback=stop()
+   shutdown_callback=stop())
 
     
