@@ -3,7 +3,7 @@ from pyrogram import Client
 import aiorun
 import os
 
-app - Client(
+app = Client(
     name="debug",
     api_id=API_ID,
     api_hash=API_HASH,
