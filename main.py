@@ -15,9 +15,7 @@ app = Client(
 
 async def start_client():
     await app.start()
-    me = await self.get.me()
-    self.username = "@" + me.username
-    print(f"{me.fist_name} start {me.username}")
+    print("bot start")
 
 
 
