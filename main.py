@@ -4,7 +4,7 @@ import aiorun
 import os
 
 class App(Client):
-  def __init__(self):
+  def __init__():
      super().__init__(
        name="debug",
        api_id=API_ID,
@@ -14,7 +14,7 @@ class App(Client):
        worker='50',
 )
 
-async def start_client(self):
+async def start_client():
     await super().start()
     me = await self.get.me()
     self.username = "@" + me.username
@@ -22,7 +22,7 @@ async def start_client(self):
 
 
 
-async def stop_client(self):
+async def stop_client():
     await super().stop()
     print("bot stop bye")
 
