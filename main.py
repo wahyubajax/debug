@@ -27,6 +27,6 @@ async def stop_client():
 
 if __name__ == "__main__":
    aiorun.run(start_client(), 
-   shutdown_callback=stop_client()0
+   shutdown_callback=stop_client())
 
     
