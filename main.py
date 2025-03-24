@@ -14,7 +14,7 @@ class App(Client):
        worker='50',
 )
 
-async def start(self):
+async def start_client(self):
     await super().start()
     me = await self.get.me()
     self.username = "@" + me.username
@@ -22,13 +22,13 @@ async def start(self):
 
 
 
-async def stop(self):
+async def stop_client(self):
     await super().stop()
     print("bot stop bye")
 
 
 if __name__ == "__main__":
-   aiorun.run(start(self),
-   shutdown_callback=stop(self))
+   aiorun.run(start_client(),
+   shutdown_callback=stop_client())
 
     
