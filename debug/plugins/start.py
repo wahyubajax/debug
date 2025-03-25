@@ -1,7 +1,7 @@
 from config import * 
 from pyrogram import Client, filters
-from main import app
+from pyrogram import Client
 
-@app.on_message(filters.command("start") & filters.private)
+@Client.on_message(filters.command("start") & filters.private)
 async def start_cmd(bot, message):
   print("hi bang")
